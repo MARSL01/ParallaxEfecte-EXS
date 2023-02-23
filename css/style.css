@@ -66,7 +66,7 @@ section h1 {
 }
 
 .bg::after {
-  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(/img/messip.jpg);
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(http://drive.google.com/uc?export=view&id=1kM5EXYfQzkN2vSRTTur7Ak8XQ43SXgxd);
   background-size: cover;
 }
 
