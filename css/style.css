@@ -1,3 +1,4 @@
+
 /* Comencem resetejant els valors del navegador */
 *,
 *::before,
@@ -15,10 +16,7 @@
   position: absolute;
   bottom: 240px;
   text-align: center;
-  font-size: 2rem;
-  width: 100%;
-  margin-bottom: 1rem;
-  bottom: 200px;
+  font-size: 35px;
 }
 
 main {
@@ -30,22 +28,25 @@ main {
 
 section {
   transform-style: preserve-3d;
-  position: relative;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 section h1 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 64px;
   font-family: sans-serif;
 }
 
-.no-parallax {
-  background-color: rgb(16, 6, 151);
+.no-parallax1 {
+  background-image: url(https://images6.alphacoders.com/130/1301339.jpg);
+  z-index: 20;
+}
+.no-parallax2{
+  background-color: rgb(6, 6, 144);
   z-index: 20;
 }
 
@@ -73,12 +74,12 @@ section h1 {
 
 /* A partir d'aquí és el codi per al menú fixat a la part superior */
 header {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 80px;
+  height: 70px;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000; /*valor alt per donar preferencia*/
 }
@@ -94,13 +95,12 @@ nav {
   align-items: center;
   height: 100%;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: auto;
 }
 
 
 nav h1 {
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: bold;
   color: white;
 }
@@ -117,40 +117,50 @@ nav li {
 }
 
 nav li a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
+  font-size: 19px;
+  text-transform: uppercase; /*posar text en maj*/
 }
 
 nav li a:hover {
   color: rgb(0, 221, 81);
 }
-.taula {
-  background-color: rgb(187, 22, 10);
-  padding: 2rem;
+
+/*TAULA*/
+.taula-contenidor {
+  display: grid;
+  justify-items: center;
 }
 
-table {
-  width: 100%;
+.taula-titol {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 32px;
+}
+
+.taula {
+  background-color: rgb(255, 255, 255);
+  max-width: 1000px;
+  padding: 5rem;
   border-collapse: collapse;
-  margin-top: 1rem;
+  width: 100%;
 }
 
 th, td {
-  padding: 0.5rem;
-  border: 1px solid black;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  background-color: rgb(226, 165, 0);
 }
 
 th {
-  background-color: grey;
+  background-color: rgb(158, 0, 220);
   color: white;
 }
 
-tr:nth-child(even) {
-  background-color: rgb(187, 22, 10);
-}
 
 
 
